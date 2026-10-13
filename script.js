@@ -53,6 +53,13 @@ var navToggle = document.getElementById("navToggle");
 var navLinks = document.getElementById("navLinks");
 navToggle.addEventListener("click", function () {
   navLinks.classList.toggle("open");
+navToggle.setAttribute("aria-expanded", isOpen);
+  navToggle.setAttribute(
+    "aria-label",
+    isOpen ? "Close menu" : "Open menu"
+  );
+
+  navToggle.textContent = isOpen ? "✕" : "☰";
 });
 
 // ---------- Footer year ----------
