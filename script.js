@@ -23,11 +23,17 @@ document.querySelectorAll(".faq-q").forEach(function (q) {
   });
 });
 
-// ---------- Theme toggle ----------
+ // ---------- Theme toggle ----------
 var themeBtn = document.getElementById("themeToggle");
+
 themeBtn.addEventListener("click", function () {
-  document.body.classList.toggle("dark-mode");
-  themeBtn.textContent = "Light";
+  document.body.classList.toggle("dark");
+
+  if (document.body.classList.contains("dark")) {
+    themeBtn.textContent = "Light";
+  } else {
+    themeBtn.textContent = "Dark";
+  }
 });
 
 // ---------- Contact form ----------
