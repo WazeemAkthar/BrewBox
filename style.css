@@ -47,7 +47,7 @@ button { outline: none; font-family: inherit; cursor: pointer; }
   padding: 20px 40px 80px;
 }
 .hero-text { max-width: 560px; }
-.hero h1 { font-size: 64px; line-height: 1.1; color: #fff; margin-bottom: 20px; }
+.hero h1 { font-size: clamp(32px, 5vw, 64px); line-height: 1.1; color: #fff; margin-bottom: 20px; }
 .hero p { color: #f7efe5; font-size: 18px; margin-bottom: 28px; }
 .hero-img { width: 100px; max-width: 600px; height: auto; border-radius: 12px; }
 
