@@ -52,7 +52,7 @@ form.addEventListener("submit", function (e) {
 var navToggle = document.getElementById("navToggle");
 var navLinks = document.getElementById("navLinks");
 navToggle.addEventListener("click", function () {
-  navLinks.classList.toggle("open");
+ var isOpen = navLinks.classList.toggle("open");
 navToggle.setAttribute("aria-expanded", isOpen);
   navToggle.setAttribute(
     "aria-label",
