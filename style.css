@@ -137,7 +137,7 @@ body.dark .card, body.dark .price-card { background: #2a2a2a; }
     flex-direction: column;
     padding: 20px;
   }
-  .nav-links.active { display: flex; }
+  .nav-links.open { display: flex; }
 
   .hero { flex-direction: column; padding: 20px; }
   .grid { grid-template-columns: repeat(2, 1fr); }
