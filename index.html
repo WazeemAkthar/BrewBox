@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrewBox - Fresh Coffee Delivered</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#" class="logo">☕ BrewBox</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#features">Features</a>
+      <a href="#pricin">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle" class="btn-small">Dark</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Fresh roasted coffee, delivered to your door</h1>
+      <p>Small-batch beans from Sri Lankan and Ethiopian farms, roasted this week and shipped to you.</p>
+      <a href="#pricing" class="btn">Start my subscription</a>
+      <div class="stats">
+        <div><span class="stat-num" data-target="120">0</span>+ <small>farms</small></div>
+        <div><span class="stat-num" data-target="5000">0</span>+ <small>customers</small></div>
+        <div><span class="stat-num" data-target="48">0</span> <small>hour delivery</small></div>
+      </div>
+    </div>
+    <img src="images/coffee-hero.jpg" class="hero-img">
+  </section>
+
+  <section id="features" class="section">
+    <h2>Why BrewBox?</h2>
+    <div class="grid">
+      <div class="card">
+        <h4>Roasted to order</h4>
+        <p>Your beans are roasted only after you order, so every cup tastes fresh.</p>
+      </div>
+      <div class="card" style="padding:10px">
+        <h4>Ethically sourced</h4>
+        <p>We pay farmers fair prices and share where every bag comes from.</p>
+      </div>
+      <div class="card">
+        <h4>Pause anytime</h4>
+        <p>Skip a month or cancel in two clicks. No questions, no fees.</p>
+        <p>Really.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="section alt">
+    <h2>Pick your plan</h2>
+    <div class="pricing">
+      <div class="price-card" id="plan">
+        <h3>Starter</h3>
+        <p class="price">$12<span>/month</span></p>
+        <p>1 bag (250g)</p>
+        <button class="btn" onclick="selectPlan(starter)">Choose Starter</button>
+      </div>
+      <div class="price-card popular" id="plan">
+        <h3>Daily</h3>
+        <p class="price">$22<span>/month</span></p>
+        <p>2 bags (500g)</p>
+        <button class="btn" onclick="selectPlan('Daily')">Choose Daily</button>
+      </div>
+      <div class="price-card">
+        <h3>Office</h3>
+        <p class="price">$45<span>/month</span></p>
+        <p>5 bags (1.25kg)</p>
+        <button class="btn" onclick="selectPlan('Office')">Choose Office</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <h2>Questions</h2>
+    <div class="faq-item">
+      <button class="faq-q">Can I change my grind size?</button>
+      <div class="faq-a">Yes. Pick whole bean, espresso, or filter in your account.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">How long does delivery take?</button>
+      <div class="faq-a">Most orders arrive within 48 hours of roasting.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Can I gift a subscription?</button>
+      <div class="faq-a">Yes, choose "Gift" at checkout and enter their address.</div>
+    </div>
+  </section>
+
+  <section id="contact" class="section alt">
+    <h2>Get in touch</h2>
+    <form id="contactForm" class="form">
+      <input type="text" id="name" placeholder="Your name">
+      <input type="text" id="email" placeholder="Email address">
+      <textarea id="message" rows="4" placeholder="How can we help?"></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>© 2019 BrewBox. All rights reserved.</p>
+    <p>Made with ❤ in Colombo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
