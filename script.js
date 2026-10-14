@@ -93,6 +93,26 @@ if (form) {
       emailError.textContent = "Please enter a valid email address.";
       isValid = false;
     }
+
+    // Validate message
+    if (message === "") {
+      messageError.textContent = "Please enter your message.";
+      isValid = false;
+    }
+
+    // Stop if validation fails
+    if (!isValid) {
+      formStatus.textContent = "Please correct the errors above.";
+      return;
+    }
+
+    // Success message
+    formStatus.textContent =
+      "Thank you! Your form passed validation.";
+
+    form.reset();
+  });
+}
 // ---------- Mobile menu ----------
 var navToggle = document.getElementById("navToggle");
 var navLinks = document.getElementById("navLinks");
