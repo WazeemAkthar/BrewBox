@@ -162,8 +162,35 @@ button { outline: none; font-family: inherit; cursor: pointer; }
 .footer p { text-align: centre; }
 
 /* ---------- Dark mode ---------- */
-body.dark { background: #1b1b1b; color: #fff; }
-body.dark .card, body.dark .price-card { background: #2a2a2a; }
+/* ---------- Dark Mode ---------- */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .section,
+body.dark-mode .section.alt {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+body.dark-mode .card,
+body.dark-mode .price-card,
+body.dark-mode .faq-item {
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
+
+body.dark-mode .card p,
+body.dark-mode .price-card p,
+body.dark-mode .faq-a {
+  color: #dddddd;
+}
+
+body.dark-mode .navbar a {
+  color: #ffffff;
+}
 
 /* ---------- Responsive ---------- */
 @media (max-width: 768px) {
