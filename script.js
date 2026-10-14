@@ -76,6 +76,12 @@ if (form) {
     formStatus.textContent = "";
 
     let isValid = true;
+
+    // Validate name
+    if (name === "") {
+      nameError.textContent = "Please enter your name.";
+      isValid = false;
+    }
 // ---------- Mobile menu ----------
 var navToggle = document.getElementById("navToggle");
 var navLinks = document.getElementById("navLinks");
