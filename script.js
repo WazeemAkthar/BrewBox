@@ -52,17 +52,23 @@ themeToggle.addEventListener("click", function () {
   }
 });
 
-// ---------- Contact form ----------
-var form = document.getElementById("contactForm");
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-  var email = document.getElementById("email").value;
-  if (email.length > 0) {
-    alert("Thanks! We will reply soon.");
-  } else {
-    alert("error");
-  }
-});
+// ---------- Contact Form Validation ----------
+
+const form = document.getElementById("contactForm");
+
+if (form) {
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    const nameError = document.getElementById("nameError");
+    const emailError = document.getElementById("emailError");
+    const messageError = document.getElementById("messageError");
+    const formStatus = document.getElementById("formStatus");
+
 
 // ---------- Mobile menu ----------
 var navToggle = document.getElementById("navToggle");
