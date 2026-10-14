@@ -5,13 +5,22 @@ function selectPlan(plan) {
 }
 
 // ---------- Animated stats ----------
+
 document.querySelectorAll(".stat-num").forEach(function (el) {
-  var target = el.dataset.target;
+  var target = parseInt(el.dataset.target);
   var n = 0;
-  setInterval(function () {
-    n += 5;
+  var increment = Math.ceil(target / 60);
+
+  var timer = setInterval(function () {
+    n += increment;
+
+    if (n >= target) {
+      n = target;
+      clearInterval(timer);
+    }
+
     el.textContent = n;
-  }, 50);
+  }, 30);
 });
 
 // ---------- FAQ Accordion ----------
