@@ -40,15 +40,15 @@ document.querySelectorAll(".faq-q").forEach(function (button) {
 });
 
  // ---------- Theme toggle ----------
-var themeBtn = document.getElementById("themeToggle");
+var themeToggle = document.getElementById("themeToggle");
 
-themeBtn.addEventListener("click", function () {
-  document.body.classList.toggle("dark");
+themeToggle.addEventListener("click", function () {
+  document.body.classList.toggle("dark-mode");
 
-  if (document.body.classList.contains("dark")) {
-    themeBtn.textContent = "Light";
+  if (document.body.classList.contains("dark-mode")) {
+    themeToggle.textContent = "Light";
   } else {
-    themeBtn.textContent = "Dark";
+    themeToggle.textContent = "Dark";
   }
 });
 
