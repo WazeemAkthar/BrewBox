@@ -82,6 +82,17 @@ if (form) {
       nameError.textContent = "Please enter your name.";
       isValid = false;
     }
+
+    // Validate email
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (email === "") {
+      emailError.textContent = "Please enter your email address.";
+      isValid = false;
+    } else if (!emailPattern.test(email)) {
+      emailError.textContent = "Please enter a valid email address.";
+      isValid = false;
+    }
 // ---------- Mobile menu ----------
 var navToggle = document.getElementById("navToggle");
 var navLinks = document.getElementById("navLinks");
