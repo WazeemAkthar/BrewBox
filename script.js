@@ -14,12 +14,19 @@ document.querySelectorAll(".stat-num").forEach(function (el) {
   }, 50);
 });
 
-// ---------- FAQ accordion ----------
-document.querySelectorAll(".faq-q").forEach(function (q) {
-  q.addEventListener("click", function () {
-    document.querySelectorAll(".faq-a").forEach(function (a) {
-      a.classList.toggle("show");
-    });
+// ---------- FAQ Accordion ----------
+document.querySelectorAll(".faq-q").forEach(function (button) {
+  button.addEventListener("click", function () {
+    const answer = button.nextElementSibling;
+
+    if (answer) {
+      answer.classList.toggle("show");
+
+      button.setAttribute(
+        "aria-expanded",
+        answer.classList.contains("show")
+      );
+    }
   });
 });
 
