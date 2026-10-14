@@ -163,6 +163,48 @@ button { outline: none; font-family: inherit; cursor: pointer; }
   flex-direction: column;
   gap: 6px;
 }
+
+.form-group label {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  font-family: inherit;
+  color: #2b2b2b;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: 2px solid #c8793a;
+  border-color: #c8793a;
+}
+
+.form textarea {
+  resize: vertical;
+}
+
+.error-message {
+  color: #c62828;
+  font-size: 13px;
+  min-height: 0;
+}
+
+#formStatus {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.form .btn {
+  align-self: flex-start;
+}
 /* ---------- Footer ---------- */
 .footer { background: #222; color: #aaa; padding: 30px; }
 .footer p { text-align: centre; }
