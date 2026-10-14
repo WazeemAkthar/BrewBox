@@ -69,7 +69,13 @@ if (form) {
     const messageError = document.getElementById("messageError");
     const formStatus = document.getElementById("formStatus");
 
+ // Clear previous errors
+    nameError.textContent = "";
+    emailError.textContent = "";
+    messageError.textContent = "";
+    formStatus.textContent = "";
 
+    let isValid = true;
 // ---------- Mobile menu ----------
 var navToggle = document.getElementById("navToggle");
 var navLinks = document.getElementById("navLinks");
