@@ -94,17 +94,47 @@ button { outline: none; font-family: inherit; cursor: pointer; }
 .price-card .btn { margin-top: 16px; }
 
 /* ---------- FAQ ---------- */
-.faq-item { max-width: 700px; margin: 0 auto 12px; text-align: left; }
+
+.faq-item {
+  max-width: 700px;
+  margin: 0 auto 12px;
+  text-align: left;
+}
+
 .faq-q {
   width: 100%;
   text-align: left;
   padding: 14px;
   font-size: 16px;
+  font-family: inherit;
   background: #fff;
+  color: #2b2b2b;
   border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.faq-a { display: none; padding: 14px; background: #fff; }
-.faq-a.show { display: block; }
+
+.faq-q:hover {
+  background: #f7efe5;
+}
+
+.faq-q:focus-visible {
+  outline: 2px solid #c8793a;
+  outline-offset: 2px;
+}
+
+.faq-a {
+  display: none;
+  padding: 14px;
+  background: #fff;
+  color: #2b2b2b;
+  border: 1px solid #ddd;
+  border-top: none;
+}
+
+.faq-a.show {
+  display: block;
+}
 
 /* ---------- Form ---------- */
 .form { max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; }
