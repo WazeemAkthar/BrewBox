@@ -1,6 +1,5 @@
 // ---------- Pricing buttons ----------
 function selectPlan(plan) {
-  console.log("plan clicked", plan);
   alert("You selected the " + plan + " plan!");
 }
 
