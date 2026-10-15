@@ -51,10 +51,10 @@ button { outline: none; font-family: inherit; cursor: pointer; }
 .hero p { color: #f7efe5; font-size: 18px; margin-bottom: 28px; }
 
 .hero-img {
-  width: 45%;
+  width: 50%;
   min-width: 280px;
   max-width: 560px;
-  height: 380px;
+  height: 420px;
   display: block;
   object-fit: cover;
   border-radius: 16px;
