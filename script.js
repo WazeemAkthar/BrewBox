@@ -53,6 +53,7 @@ themeToggle.addEventListener("click", function () {
 });
 
 
+
 // ---------- Contact Form Validation ----------
 const form = document.getElementById("contactForm");
 
@@ -116,6 +117,7 @@ if (form) {
     form.reset();
   });
 }
+
 
 
  // Clear previous errors
