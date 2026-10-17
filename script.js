@@ -23,6 +23,7 @@ document.querySelectorAll(".stat-num").forEach(function (el) {
 });
 
 
+
 // ---------- FAQ Accordion ----------
 document.querySelectorAll(".faq-q").forEach(function (button) {
   button.addEventListener("click", function () {
