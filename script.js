@@ -23,6 +23,7 @@ document.querySelectorAll(".stat-num").forEach(function (el) {
 });
 
 
+
 // ---------- FAQ Accordion ----------
 document.querySelectorAll(".faq-q").forEach(function (button) {
   button.addEventListener("click", function () {
@@ -50,6 +51,7 @@ themeToggle.addEventListener("click", function () {
     themeToggle.textContent = "Dark";
   }
 });
+
 
 
 // ---------- Contact Form Validation ----------
@@ -115,6 +117,7 @@ if (form) {
     form.reset();
   });
 }
+
 
 
  // Clear previous errors
