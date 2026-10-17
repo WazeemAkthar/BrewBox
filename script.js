@@ -22,21 +22,21 @@ document.querySelectorAll(".stat-num").forEach(function (el) {
   }, 30);
 });
 
+
 // ---------- FAQ Accordion ----------
 document.querySelectorAll(".faq-q").forEach(function (button) {
   button.addEventListener("click", function () {
     const answer = button.nextElementSibling;
 
-    if (answer) {
-      answer.classList.toggle("show");
+    if (!answer) return;
 
-      button.setAttribute(
-        "aria-expanded",
-        answer.classList.contains("show")
-      );
-    }
+    const isOpen = answer.classList.contains("show");
+
+    answer.classList.toggle("show", !isOpen);
+    button.setAttribute("aria-expanded", String(!isOpen));
   });
 });
+
 
  // ---------- Theme toggle ----------
 var themeToggle = document.getElementById("themeToggle");
