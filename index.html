@@ -38,24 +38,36 @@
 >
   </section>
 
-  <section id="features" class="section">
-    <h2>Why BrewBox?</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Roasted to order</h3>
-        <p>Your beans are roasted only after you order, so every cup tastes fresh.</p>
-      </div>
-      <div class="card">
-        <h3>Ethically sourced</h3>
-        <p>We pay farmers fair prices and share where every bag comes from.</p>
-      </div>
-      <div class="card">
-        <h3>Pause anytime</h3>
-        <p>Skip a month or cancel in two clicks. No questions, no fees.</p>
-        <p>Really.</p>
-      </div>
+ 
+<section id="contact" class="section alt">
+  <h2>Get in touch</h2>
+
+  <form id="contactForm" class="form" novalidate>
+    <div class="form-group">
+      <label for="name">Your name</label>
+      <input type="text" id="name" placeholder="Your name">
+      <small id="nameError" class="error-message"></small>
     </div>
-  </section>
+
+    <div class="form-group">
+      <label for="email">Email address</label>
+      <input type="email" id="email" placeholder="Email address">
+      <small id="emailError" class="error-message"></small>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" rows="4"
+        placeholder="How can we help?"></textarea>
+      <small id="messageError" class="error-message"></small>
+    </div>
+
+    <p id="formStatus" role="status" aria-live="polite"></p>
+
+    <button type="submit" class="btn">Send</button>
+  </form>
+</section>
+
 
   <section id="pricing" class="section alt">
     <h2>Pick your plan</h2>
